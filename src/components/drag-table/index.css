@@ -1,0 +1,10 @@
+.el-table {
+  user-select: none;
+}
+.el-table .drag-line td,
+.el-table .drag-line th {
+  border-bottom-color: red !important;
+}
+.el-table::before {
+  display: none;
+}
