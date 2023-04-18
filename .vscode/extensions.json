@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "HookyQR.beautify", // 代码自动,格式化
+    "Zignd.html-css-class-completion",  // css 提示 为项目配置
+    "quicktype.quicktype", // JSON 转 code
+    "milkmidi.vs-code-quick-require", // 快速引入 ctrl + shift + 1 || ctrl + shift + 2 1是require 2 import
+    "octref.vetur", // vue 基础
+    "dbaeumer.vscode-eslint", // eslint
+    "russell.any-rule", // 正则大全
+    "SS.element-ui-snippets", // element-ui 提示
+  ]
+}
