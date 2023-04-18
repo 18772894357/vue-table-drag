@@ -1,44 +1,31 @@
-## 数据格式
+## 特点
+
+轻量级，通过 directive 注入，可以实现表格的拖拽更换顺序
+
+## 使用方法
+
++main.js
 
 ```javascript
-options: {
-  formSchame: {
-    name: {
-      label: '姓名',
-      component: 'el-input',
-      rrules: {
-        required: true
-      }
-    },
-    age: {
-      label: '名称',
-      component: 'custom-render',
-      render: (h) => {
-        return (
-          <span>其他自定义组件或者文案等</span>
-        )
-      }
-    },
-    other: {
-      [object]: {
-        name: {
-          label: '姓名',
-          component: 'el-input'
-        }
-      }
-    }
+import 'vue-table-drag';
+```
+
+```html
+<el-table v-drag="move" :data="tableData"></el-table>
+```
+
+```javascript
+
+move (start, end) {
+  if (start === end || end - start === 1) {
+    return
+  }
+  const moveRow = this.tableData[start]
+  this.tableData.splice(start, 1)
+  if (start > end) {
+    this.tableData.splice(end, 0, moveRow)
+  } else {
+    this.tableData.splice(end - 1, 0, moveRow)
   }
 }
 ```
-
-## 特点
-
-### 1、支持将 json 格式化成 form 表单，rules 以及联动等功能
-
-### 2、支持深度嵌套表单渲染
-
-### 3、支持 slot 和 jsx render 模式，便于灵活扩展其他组件的嵌入和更改
-
-## 案例
-
-yarn serve 启动查看

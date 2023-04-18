@@ -6790,6 +6790,11 @@ vue-style-loader@^4.1.0, vue-style-loader@^4.1.3:
     hash-sum "^1.0.2"
     loader-utils "^1.0.2"
 
+vue-table-drag@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/vue-table-drag/-/vue-table-drag-1.0.0.tgz#719621241a58cec6fa3c4811b76e7d3ca61f9d5f"
+  integrity sha512-+xrK019d4QNWy58So8OZbG0X294XsHP+YC2bYCe8G6Z2cXMO4av7eS6RDjbcU8a8TbM7jK1o0BI86E4VzbcaWw==
+
 vue-template-compiler@^2.6.14:
   version "2.7.14"
   resolved "https://registry.npmmirror.com/vue-template-compiler/-/vue-template-compiler-2.7.14.tgz#4545b7dfb88090744c1577ae5ac3f964e61634b1"
